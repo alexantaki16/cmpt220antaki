@@ -1,0 +1,27 @@
+8 pts
+
+Alex, 
+
+About your programs...
+
+Functionality
+
+- All programs function correctly as required.
+
+
+Style Check
+
+- You used tabs, which is forbidden. -1pt
+
+- There is incorrect indentation. -1pt
+
+- You are using _System.exit(1)_ wrong. Most of the times I don't think you even
+  need that. Consider a simple _return_ statement
+
+Please make sure you follow the style guidelines. Penalties will be higher as
+the semester moves forward.
+
+
+Peace,
+
+- Dr. Rivas
