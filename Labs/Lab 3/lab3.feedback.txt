@@ -1,0 +1,22 @@
+9 pts
+
+Alex,
+
+About your programs...
+
+Functionality
+
+- Problems 5.12 and 13 are wrong. Gives the right answer, but it is using the
+  loops as simple _if_ statements.  -1pt
+
+Please make sure you read the problems well; follow instructions.
+
+
+Style Check
+
+- Your programs seem to pass the style check. Good job!
+
+
+Peace,
+
+- Dr. Rivas
