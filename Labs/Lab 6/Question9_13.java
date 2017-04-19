@@ -60,6 +60,36 @@ public class Question9_13{
     Location(){
 
     }
+    
+    //Create getter method for rows
+    public int getRows() {
+		  return rows;
+	  }
+
+    //Create a setter method for rows
+    public void setRows(int rows) {
+		  this.rows = rows;
+    }
+
+    //Create a getter for cols
+    public int getCols() {
+      return cols;
+    }
+
+    //Create a setter for cols
+    public void setCols(int cols) {
+      this.cols = cols;
+    }
+
+    //Creater a getter for maxValue
+    public double getMaxVal() {
+      return maxVal;
+    }
+
+    //Create a setter for maxValue
+    public void setMaxVal(double maxVal) {
+      this.maxVal = maxVal;
+    }
 
     //Second construtor takes in the array being passed
     Location(double[][] a){
