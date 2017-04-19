@@ -63,12 +63,12 @@ public class Question9_13{
     
     //Create getter method for rows
     public int getRows() {
-		  return rows;
-	  }
+      return rows;
+    }
 
     //Create a setter method for rows
     public void setRows(int rows) {
-		  this.rows = rows;
+      this.rows = rows;
     }
 
     //Create a getter for cols
