@@ -36,11 +36,14 @@ public class Queue{
    * Return value: This method is void and does not return anything
   */
   public void enqueue(int v){
+    //Test if the size of the array is long enough
     if(size >= elements.length){
+      //Double the length of the array and copy the values into it
       int[] temp = new int[elements.length * 2];
       System.arraycopy(elements, 0, temp, 0, elements.length);
       elements = temp;
     }
+    //Store v in the array
     elements[size++] = v;
   }
 
@@ -56,11 +59,15 @@ public class Queue{
    * Return value: This method returns the value in the 0 index.
   */
   public int dequeue(){
+    //Initialize
     int zeroIndex = elements[0];
+    //Use a loop to make the list into a queue output
     for(int i = 1; i < elements.length; i++){
       elements[i - 1] = elements[i];
     }
+    //Decrement size
     size--;
+    //Return each value
     return zeroIndex;
   }
 
