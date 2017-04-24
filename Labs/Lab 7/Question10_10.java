@@ -22,6 +22,7 @@ public class Question10_10 extends Queue{
     //Use a while loop to repeatedly display the queue until it is empty
     while(!myQueue.empty())
       System.out.print(myQueue.dequeue() + " ");
-      System.out.println();
+    
+    System.out.println();
   }
 }
