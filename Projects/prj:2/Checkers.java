@@ -6,63 +6,80 @@
    * due date: April 4, 2017
    * version: 1
    *
-   * This file is my milestone.  So far it displays the checker board using JavaFX
+   * This file is my checkers program.
    */
-import java.util.Scanner;
-import java.util.Arrays;
 import javax.swing.*;
 import java.applet.*;
 import java.awt.*;
+import javafx.scene.shape.Circle;
+import javafx.scene.Group;
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
 
-public class Checkers {
+public class Checkers extends Application{
+
   final public static int numRows = 8;
   final public static int numCols = 8;
   public static Color tile1 = Color.BLACK;
   public static Color tile2 = Color.RED;
-  public static void main(String[] args){
 
-    //This JFrame is used to create a window for the actual checker board
-    //When run, the window that pops up is encapsulated by this JFrame
+  @Override
+  public void start(Stage primaryStage){
+
+    //Used to create window for the checker board
     JFrame myBoard = new JFrame();
 
-    //Initialize the size of the board and title it CheckerBoard
-    myBoard.setSize(400,400);
-    myBoard.setTitle("CheckerBoard");
+    //Initialize the size of the board and title it Checkers
+    myBoard.setSize(800,800);
+    myBoard.setTitle("Checkers");
 
-    //This uses the imported javax.swing to hold objects.  The getContentPane
-    //creates a content pane layer to hold objects in the container called pane
-    Container pane = myBoard.getContentPane();
+    //The getContentPane creates a content pane layer to hold objects
+    Container myContainer = myBoard.getContentPane();
 
-    //This sets the layout of the checker board.  It creates a new grid that has
-    //the dimensions of numRows and numCols
-    pane.setLayout(new GridLayout(numRows, numCols));
+    //This sets the layout of the checker board with the rows and columns as parameters.
+    myContainer.setLayout(new GridLayout(numRows, numCols));
 
-    //Create a temporary color.  Also allows us to alternate colors later in
-    // the up coming for loops
-    Color temp;
+    //Create a temporary color.
+    Color temp = Color.ORANGE;
 
-    //This for loop will test if i is even.  If it is it will assign tile1 the
-    // color black.  If it is not it will assign tile the color red.
+    //This for loop will alternate black and red panes for the board
+    JPanel[][] myPanels = new JPanel[numRows][numCols];
+    JPanel panels = new JPanel();
+
     for(int i = 0; i < numRows; i++){
       if(i % 2 == 0)
         temp = tile1;
       else
         temp = tile2;
-
-      //This nested for loop will make sure the tiles alternate
       for(int j = 0; j < numCols; j++){
+
         //The JPanel is used to group components in the same contianer together
         JPanel panel = new JPanel();
+        myPanels[i][j] = panel;
+
         //Set the background color to temp
         panel.setBackground(temp);
 
         //Alternates the tiles
-        if(temp.equals(tile1))
+        if(temp.equals(tile1)){
           temp = tile2;
-        else
+          if(i <= 2){
+            ImageIcon image = new ImageIcon("checkerpiece.png");
+            JLabel label = new JLabel("", image, JLabel.CENTER);
+            panel.add(label, BorderLayout.CENTER);
+          }
+          if(i >= 5){
+            ImageIcon image = new ImageIcon("circle2.png");
+            JLabel label = new JLabel("", image, JLabel.CENTER);
+            panel.add(label, BorderLayout.CENTER);
+          }
+        }else
           temp = tile1;
+
         //Add each pane to the panel.
-        pane.add(panel);
+        myContainer.add(panel);
       }
     }
     //Allow board to actually be displayed
