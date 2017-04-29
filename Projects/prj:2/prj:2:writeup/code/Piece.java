@@ -1,11 +1,3 @@
-import javafx.application.Application;
-import javafx.scene.Scene;
-import javafx.scene.layout.Pane;
-import javafx.scene.paint.Color;
-import javafx.scene.shape.Circle;
-import javafx.stage.Stage;
-import javafx.scene.Group;
-
 /*
  * file: Piece.java
  * author: Alex Antaki
@@ -16,6 +8,15 @@ import javafx.scene.Group;
  *
  *  This program will create a circle object
  */
+
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.layout.Pane;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Circle;
+import javafx.stage.Stage;
+import javafx.scene.Group;
+
 public class Piece extends Application {
   //Create circle object
   Circle myCircle;
