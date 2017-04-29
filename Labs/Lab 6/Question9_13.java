@@ -68,7 +68,6 @@ public class Question9_13{
    *
    * Parameters: There are no parameters
    *   
-   *
    * Return value: The method returns the rows.
   */
     public int getRows() {
@@ -79,8 +78,7 @@ public class Question9_13{
    *
    * This method sets the rows
    *
-   * Parameters: int a: The rows themselves
-   *   
+   * Parameters: int a: The rows themselves 
    *
    * Return value: The method is void and requires no return value.
   */
@@ -92,8 +90,7 @@ public class Question9_13{
    *
    * This method gets the columns
    *
-   * Parameters: There are no parameters
-   *   
+   * Parameters: There are no parameters  
    *
    * Return value: The method returns the columns.
   */
@@ -105,8 +102,7 @@ public class Question9_13{
    *
    * This method sets the columns
    *
-   * Parameters: int cols: The columns themselves
-   *   
+   * Parameters: int cols: The columns themselves  
    *
    * Return value: The method is void and has no return value.
   */
@@ -118,8 +114,7 @@ public class Question9_13{
    *
    * This method gets the MaxValue
    *
-   * Parameters: There are no parameters
-   *   
+   * Parameters: There are no parameters   
    *
    * Return value: The method returns the MaxValue.
   */
@@ -131,8 +126,7 @@ public class Question9_13{
    *
    * This method sets the MaxVal
    *
-   * Parameters: double maxVal: The maxValue itself
-   *   
+   * Parameters: double maxVal: The maxValue itself  
    *
    * Return value: The method is void and has no return value.
   */
