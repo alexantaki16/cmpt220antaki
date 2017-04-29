@@ -61,32 +61,81 @@ public class Question9_13{
 
     }
     
-    //Create getter method for rows
+  /*
+   * getRows
+   *
+   * This method gets the rows
+   *
+   * Parameters: There are no parameters
+   *   
+   *
+   * Return value: The method returns the rows.
+  */
     public int getRows() {
       return rows;
     }
 
-    //Create a setter method for rows
+  /* setRows
+   *
+   * This method sets the rows
+   *
+   * Parameters: int a: The rows themselves
+   *   
+   *
+   * Return value: The method is void and requires no return value.
+  */
     public void setRows(int rows) {
       this.rows = rows;
     }
 
-    //Create a getter for cols
+  /* getCols
+   *
+   * This method gets the columns
+   *
+   * Parameters: There are no parameters
+   *   
+   *
+   * Return value: The method returns the columns.
+  */
     public int getCols() {
       return cols;
     }
 
-    //Create a setter for cols
+  /* setCols
+   *
+   * This method sets the columns
+   *
+   * Parameters: int cols: The columns themselves
+   *   
+   *
+   * Return value: The method is void and has no return value.
+  */
     public void setCols(int cols) {
       this.cols = cols;
     }
 
-    //Creater a getter for maxValue
+  /* getMaxValue
+   *
+   * This method gets the MaxValue
+   *
+   * Parameters: There are no parameters
+   *   
+   *
+   * Return value: The method returns the MaxValue.
+  */
     public double getMaxVal() {
       return maxVal;
     }
 
-    //Create a setter for maxValue
+  /* setMavVal
+   *
+   * This method sets the MaxVal
+   *
+   * Parameters: double maxVal: The maxValue itself
+   *   
+   *
+   * Return value: The method is void and has no return value.
+  */
     public void setMaxVal(double maxVal) {
       this.maxVal = maxVal;
     }
