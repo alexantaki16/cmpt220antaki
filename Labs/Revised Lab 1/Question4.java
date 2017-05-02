@@ -30,7 +30,7 @@ public class Question4 {
 		int userInt3 = userInt % 10;
 
     //Add all of the digits together.
-		int totalInt = userInt1 + userInt2 + userInt3;
-	  System.out.println("The sum of the digit is: " + totalInt);
+    int totalInt = userInt1 + userInt2 + userInt3;
+    System.out.println("The sum of the digit is: " + totalInt);
   }
 }
