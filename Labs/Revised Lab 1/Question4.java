@@ -27,7 +27,7 @@ public class Question4 {
     //Takes each digit and stores it
     int userInt1 = userInt / 100;
     int userInt2 = userInt / 10 % 10;
-		int userInt3 = userInt % 10;
+    int userInt3 = userInt % 10;
 
     //Add all of the digits together.
     int totalInt = userInt1 + userInt2 + userInt3;
