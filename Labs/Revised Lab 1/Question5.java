@@ -19,7 +19,7 @@ public class Question5 {
     Scanner input = new Scanner(System.in);
 
     System.out.println("Please enter your grades for your midterm, final, " +
-		    "projects, and homework and labs: ");
+        "projects, and homework and labs: ");
 
     //Have user input all four grades.
     double midterm = input.nextDouble();
