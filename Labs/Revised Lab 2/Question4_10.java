@@ -123,5 +123,5 @@ public class Question4_10{
       System.out.println("Your birthday is on the " + day + "rd!");
     else
       System.out.println("\nYour birthday is on the " + day + "th!");
-   }
- }
+  }
+}
