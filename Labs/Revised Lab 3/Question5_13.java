@@ -19,6 +19,7 @@ public class Question5_13 {
     while(Math.pow(n,3) < 12000){
       n += 1;
     }
+    n -= 1;
 
     //Display the results
     System.out.println("The largest 'n' that can be cubed and be smaller than "
