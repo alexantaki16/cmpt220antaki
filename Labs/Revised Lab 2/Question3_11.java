@@ -56,25 +56,25 @@ public class Question3_11 {
       default:System.out.print("You entered an invalid number.");
     }
 
-      //This if determines the months that have 28, 30, 31, and sometimes 29 days.
-      if(month == 1 || month == 3 || month == 5 || month == 7 ||
-          month == 8 || month == 10 || month == 12)
-        System.out.print(" has 31 days ");
-      else if(month == 4 || month == 6 || month == 9 || month == 11)
-        System.out.print(" has 30 days ");
-      else if (year % 4 != 0 && year % 400 != 0)
-        System.out.print(" has 28 days ");
-      else
-        System.out.print(" has 29 days ");
+     //This if determines the months that have 28, 30, 31, and sometimes 29 days.
+    if(month == 1 || month == 3 || month == 5 || month == 7 ||
+        month == 8 || month == 10 || month == 12)
+      System.out.print(" has 31 days ");
+    else if(month == 4 || month == 6 || month == 9 || month == 11)
+      System.out.print(" has 30 days ");
+    else if (year % 4 != 0 && year % 400 != 0)
+      System.out.print(" has 28 days ");
+    else
+      System.out.print(" has 29 days ");
 
-      //This if determines if the year is a leap year or any normal year.
-      if(year % 4 != 0)
-        System.out.print("and is not a leap year.");
-      else if(year % 100 != 0)
-        System.out.print("and is a leap year.");
-      else if(year % 400 != 0)
-        System.out.print("and is not a leap year.");
-      else
-        System.out.print("and is a leap year.");
+    //This if determines if the year is a leap year or any normal year.
+    if(year % 4 != 0)
+      System.out.print("and is not a leap year.");
+    else if(year % 100 != 0)
+      System.out.print("and is a leap year.");
+    else if(year % 400 != 0)
+      System.out.print("and is not a leap year.");
+    else
+      System.out.print("and is a leap year.");
   }
 }
