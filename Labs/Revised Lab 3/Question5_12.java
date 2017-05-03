@@ -19,6 +19,7 @@ public class Question5_12{
     while(Math.pow(n,2) < 12000){
       n += 1;
     }
+    n -= 1;
 
     //Display results
     System.out.println("The smallest 'n' that can be squared and be greater" +
