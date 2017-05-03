@@ -22,13 +22,13 @@ public class Question2 {
         +"projects, and homework and labs as percentages: ");
 
     //Have user input all four grades.
- 	  double midterm = input.nextDouble();
- 		double final1 = input.nextDouble();
- 	  double projects = input.nextDouble();
- 	  double hwandlab = input.nextDouble();
+    double midterm = input.nextDouble();
+    double final1 = input.nextDouble();
+    double projects = input.nextDouble();
+    double hwandlab = input.nextDouble();
 
     //Averages all inputed values
- 	  double average = (midterm + final1 + projects + hwandlab) / 4;
+    double average = (midterm + final1 + projects + hwandlab) / 4;
 
     //Calcualte letter grade for class
     if(average >= 95)
