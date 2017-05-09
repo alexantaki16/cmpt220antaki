@@ -1,0 +1,9 @@
+38 pts
+
+No submission.
+
+The project attempts to replicate the game of checkers, unsuccessfully. 
+The idea has good merit but is not original. 
+
+Overall:
+- Project is not complete. -2pts
